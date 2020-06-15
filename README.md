@@ -12,7 +12,7 @@
 
 ### open
 
-### https://itunes.apple.com/lookup?id=id675033630
+### https://itunes.apple.com/lookup?id=675033630
 
 ### in open file find for
 
