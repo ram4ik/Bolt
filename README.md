@@ -4,7 +4,7 @@
 
 ### https://itunes.apple.com/app/pages/id361309726?mt=8
 
-### look for e.g. XOLO
+### look for e.g. Bolt
 
 ### https://apps.apple.com/us/app/bolt-taxify/id675033630
 
