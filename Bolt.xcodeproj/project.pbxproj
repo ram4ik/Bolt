@@ -13,7 +13,18 @@
 		951B52AC249762B600E223DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 951B52AB249762B600E223DC /* Assets.xcassets */; };
 		951B52AF249762B600E223DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 951B52AE249762B600E223DC /* Preview Assets.xcassets */; };
 		951B52B2249762B600E223DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 951B52B0249762B600E223DC /* LaunchScreen.storyboard */; };
+		951B52C0249762CE00E223DC /* BoltUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951B52BF249762CE00E223DC /* BoltUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		951B52C2249762CE00E223DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 951B529A249762B400E223DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 951B52A1249762B400E223DC;
+			remoteInfo = Bolt;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		951B52A2249762B400E223DC /* Bolt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bolt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,20 @@
 		951B52AE249762B600E223DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		951B52B1249762B600E223DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		951B52B3249762B600E223DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		951B52BD249762CE00E223DC /* BoltUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoltUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		951B52BF249762CE00E223DC /* BoltUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoltUITests.swift; sourceTree = "<group>"; };
+		951B52C1249762CE00E223DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		951B529F249762B400E223DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		951B52BA249762CE00E223DC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				951B52A4249762B400E223DC /* Bolt */,
+				951B52BE249762CE00E223DC /* BoltUITests */,
 				951B52A3249762B400E223DC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				951B52A2249762B400E223DC /* Bolt.app */,
+				951B52BD249762CE00E223DC /* BoltUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +98,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		951B52BE249762CE00E223DC /* BoltUITests */ = {
+			isa = PBXGroup;
+			children = (
+				951B52BF249762CE00E223DC /* BoltUITests.swift */,
+				951B52C1249762CE00E223DC /* Info.plist */,
+			);
+			path = BoltUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,6 +127,24 @@
 			productReference = 951B52A2249762B400E223DC /* Bolt.app */;
 			productType = "com.apple.product-type.application";
 		};
+		951B52BC249762CE00E223DC /* BoltUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 951B52C4249762CE00E223DC /* Build configuration list for PBXNativeTarget "BoltUITests" */;
+			buildPhases = (
+				951B52B9249762CE00E223DC /* Sources */,
+				951B52BA249762CE00E223DC /* Frameworks */,
+				951B52BB249762CE00E223DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				951B52C3249762CE00E223DC /* PBXTargetDependency */,
+			);
+			name = BoltUITests;
+			productName = BoltUITests;
+			productReference = 951B52BD249762CE00E223DC /* BoltUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -107,6 +157,10 @@
 				TargetAttributes = {
 					951B52A1249762B400E223DC = {
 						CreatedOnToolsVersion = 11.5;
+					};
+					951B52BC249762CE00E223DC = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 951B52A1249762B400E223DC;
 					};
 				};
 			};
@@ -124,6 +178,7 @@
 			projectRoot = "";
 			targets = (
 				951B52A1249762B400E223DC /* Bolt */,
+				951B52BC249762CE00E223DC /* BoltUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +191,13 @@
 				951B52B2249762B600E223DC /* LaunchScreen.storyboard in Resources */,
 				951B52AF249762B600E223DC /* Preview Assets.xcassets in Resources */,
 				951B52AC249762B600E223DC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		951B52BB249762CE00E223DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +214,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		951B52B9249762CE00E223DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				951B52C0249762CE00E223DC /* BoltUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		951B52C3249762CE00E223DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 951B52A1249762B400E223DC /* Bolt */;
+			targetProxy = 951B52C2249762CE00E223DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		951B52B0249762B600E223DC /* LaunchScreen.storyboard */ = {
@@ -320,6 +398,44 @@
 			};
 			name = Release;
 		};
+		951B52C5249762CE00E223DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L8W86DZDY2;
+				INFOPLIST_FILE = BoltUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ri.BoltUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bolt;
+			};
+			name = Debug;
+		};
+		951B52C6249762CE00E223DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L8W86DZDY2;
+				INFOPLIST_FILE = BoltUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ri.BoltUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bolt;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -337,6 +453,15 @@
 			buildConfigurations = (
 				951B52B7249762B600E223DC /* Debug */,
 				951B52B8249762B600E223DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		951B52C4249762CE00E223DC /* Build configuration list for PBXNativeTarget "BoltUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				951B52C5249762CE00E223DC /* Debug */,
+				951B52C6249762CE00E223DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
